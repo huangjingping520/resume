@@ -7,7 +7,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 @mixin icon-big {
   font-size: 24px;
   line-height: 32px;
@@ -80,6 +79,12 @@
   @include iconfont;
 }
 
+.icon-html:before {
+  content: '\e65a';
+  @include iconfont;
+  @include icon-medium;
+}
+
 .icon-book:before {
   content: '\e784';
   @include iconfont;
@@ -92,7 +97,6 @@
 }
 
 .icon-cloud:before {
-  font-size: 29px;
   content: '\e63a';
   @include iconfont;
   @include icon-medium;

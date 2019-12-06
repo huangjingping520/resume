@@ -3,13 +3,13 @@ header {
   padding: 20px;
   color: #333;
   background-color: #fff;
-  // @include media("<tablet") {
-  //   padding: 30px 10px;
-  // }
-  // @include media("print") {
-  //   padding: 20px 45px;
-  // }
-  padding-bottom: 40px !important;
+  padding-bottom: 50px !important;
+  @include media("<tablet") {
+    padding: 30px 10px;
+  }
+  @include media("print") {
+    padding: 20px 45px;
+  }
 
   .card {
     color: #fff;
@@ -27,6 +27,22 @@ header {
       &:hover {
         color: rgba(255, 255, 255, .5);
         transition: all .4s;
+      }
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+
+      h1, h2 {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        margin-bottom: 10px;
       }
     }
   }
@@ -51,17 +67,18 @@ header {
 .title {
   float: right;
   text-align: right;
-  // @include media("<tablet") {
-  //   float: none;
-  //   text-align: center;
-  //   h2 {
-  //     padding: 0 6px;
-  //   }
-  // }
-  // @include media("print") {
-  //   float: right;
-  //   text-align: right;
-  // }
+  // margin-bottom: 30px;
+  @include media("<tablet") {
+    float: none;
+    text-align: center;
+    h2 {
+      padding: 0 6px;
+    }
+  }
+  @include media("print") {
+    float: right;
+    text-align: right;
+  }
   h1 {
     font-size: 72px;
     line-height: 1;
