@@ -150,23 +150,19 @@
   ],
   "skills": {
     "flags": {
-      "name": "Web前端",
+      "name": "Web 前端",
       "skill": [
         {
-          "name": "`HTML / CSS`",
+          "name": "HTML / CSS",
           "description": [
             "使用语义化 HTML 标签编写网页结构",
-            "了解 HTML 5 的常用 API 的作用",
             "熟悉 CSS 3，并能熟练使用 CSS 完成样式设计",
             "了解 BootStrap 响应式原理",
-            "能根据标注稿使用 REM 适配编写移动端网页",
-            "了解 CSS 盒模型",
-            "了解 Flexbox 模型，并较为熟练地运用",
-            "了解 Position、Float 等布局、定位方式"
+            "能根据标注稿使用 REM 适配编写移动端网页"
           ]
         },
         {
-          "name": "`JavaScript / ECMAScript`",
+          "name": "JavaScript / ECMAScript",
           "description": [
             "`熟练使用 ES 201X 进行项目开发`",
             "严格遵守 `ESLint 规范`",
@@ -175,29 +171,49 @@
           ]
         },
         {
-          "name": "前端工程化实践",
+          "name": "前端框架",
           "description": [
-            "熟练使用 `TS + React/Vue/RN` ，完成各类需求",
-            "前端工程化思考多，并有实际落地方案"
+            "熟悉 React/RN、Vue 的语法，日常使用 React 编写网页",
+            "了解并使用过 Angular 开发项目",
+            "熟悉 BootStrap 3、4 的使用",
+            "熟悉并日常使用 Ant Design (Pro) 作为 UI 框架"
+          ]
+        },
+        {
+          "name": "前端工程化",
+          "description": [
+            "使用 Webpack 构建前端应用",
+            "对前端自动化流程有思考，并推广到团队",
+            "使用 Yeoman 构建自己的脚手架",
+            "对服务端渲染有思考，并落地一套方案"
           ]
         }
       ]
     },
     "cloud": {
-      "name": "Web后端",
+      "name": "Web 后端",
       "skill": [
         {
-          "name": "`Node.js`",
+          "name": "Node.js",
           "description": [
-            "熟练使用 `TS + Koa2 + MongoDB` 完成各类应用",
-            "使用 `Jest/Mocha` 编写单测并通过 CI 实现持续集成"
+            "熟练使用 `TS 和 Koa2 和 MongoDB` 编写项目后端",
+            "比较熟悉 SQL 语法，能设计简单的表结构",
+            "使用 `Chai 和 Mocha` 等框架完成单元测试",
+            "使用 Node.js 编写简单的网页爬虫"
+          ]
+        },
+        {
+          "name": "Python 3",
+          "description": [
+            "使用 Python 3 编写简单的网页爬虫"
           ]
         },
         {
           "name": "其它知识",
           "description": [
-            "日常使用 `Docker` 完成项目的构建与部署",
-            "完成 `Nginx` 的配置，实现反向代理等功能"
+            "使用 `Docker 和 Docker Compose` 完成项目的构建与部署",
+            "使用 `Nginx` 作为反向代理和 Web 服务器",
+            "使用 `Linux` 作为个人服务器操作系统"
           ]
         }
       ]
@@ -206,18 +222,26 @@
       "name": "其它",
       "skill": [
         {
-          "name": "`计算机基础`",
+          "name": "专业",
           "description": [
-            "`对计算机与编程有极大热情，自学能力较强`",
-            "在校选课与 MOOC 自学计算机相关课程",
-            "`坚持写原创技术博客，月浏览量 3K`"
+            "对互联网技术非常热爱",
+            "有意识地关注行业最新动态和最新技术"
+          ]
+        },
+        {
+          "name": "开源贡献",
+          "description": [
+            "在 GitHub 上开源了一些自己造的轮子，`并发布在 NPM Registry 上`",
+            "自建技术博客，从 2017 年至今坚持写作",
+            "了解 VS Code 插件开发流程，并在商店中发布过一些插件"
           ]
         },
         {
           "name": "工具使用",
           "description": [
-            "`两年 Linux 使用经验`",
-            "熟练使用 Git & `GitFlow 并推广至团队`"
+            "`5 年 Linux 使用与运维经验`",
+            "`熟练使用 Git 进行日常开发`",
+            "熟悉 GitFlow 工作流，并在所有负责的团队项目中使用"
           ]
         }
       ]
