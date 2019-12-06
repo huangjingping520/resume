@@ -244,6 +244,28 @@
   line-height: 32px;
   font-size: 28px; }
 
+.icon-title-trophy:before {
+  content: "\e60e";
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 3px;
+  color: #fff;
+  background: #333;
+  font-size: 24px;
+  padding: 6px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  line-height: 32px;
+  font-size: 28px;
+}
+
 .icon-flags:before {
   content: "\e60f";
   font-family: "iconfont" !important;
