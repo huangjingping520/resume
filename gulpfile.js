@@ -124,7 +124,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   await delay(100)
 
   await page.pdf({
-    path: './src/pdf/LxxyxResume.pdf',
+    path: './dist/pdf/lenconda_resume.pdf',
     format: 'A4',
     printBackground: true,
     displayHeaderFooter: false,
