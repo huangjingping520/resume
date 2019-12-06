@@ -3,17 +3,17 @@ header {
   padding: 20px;
   color: #333;
   background-color: #fff;
-  @include media("<tablet") {
-    padding: 30px 10px;
-  }
-  @include media("print") {
-    padding: 20px 45px;
-  }
+  // @include media("<tablet") {
+  //   padding: 30px 10px;
+  // }
+  // @include media("print") {
+  //   padding: 20px 45px;
+  // }
   padding-bottom: 40px !important;
 
   .card {
     color: #fff;
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
     background: #15171a 50%;
     background-size: cover;
@@ -43,25 +43,25 @@ header {
     margin-top: 5px;
   }
   img {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
   }
 }
 
 .title {
   float: right;
   text-align: right;
-  @include media("<tablet") {
-    float: none;
-    text-align: center;
-    h2 {
-      padding: 0 6px;
-    }
-  }
-  @include media("print") {
-    float: right;
-    text-align: right;
-  }
+  // @include media("<tablet") {
+  //   float: none;
+  //   text-align: center;
+  //   h2 {
+  //     padding: 0 6px;
+  //   }
+  // }
+  // @include media("print") {
+  //   float: right;
+  //   text-align: right;
+  // }
   h1 {
     font-size: 72px;
     line-height: 1;
