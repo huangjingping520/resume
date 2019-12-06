@@ -63,8 +63,7 @@
     ],
     "skills": [
       "流畅地阅读英文文档、教程",
-      "使用英语编写 README",
-      "翻译国外技术文章"
+      "使用英语编写 README"
     ]
   },
   "experience": [
@@ -167,10 +166,10 @@
         {
           "name": "前端框架",
           "description": [
-            "日常使用 React 编写网页",
-            "了解并使用过 Angular 和 Vue 开发项目",
-            "掌握 BootStrap 3、4 的使用",
-            "熟悉并日常使用 Ant Design (Pro) 作为 UI 框架"
+            "理解 React 原理，日常使用 React 编写网页",
+            "熟悉并日常使用 Ant Design (Pro) 作为 UI 框架",
+            "掌握 BootStrap 的使用",
+            "了解并使用过 Angular 和 Vue 开发项目"
           ]
         },
         {
