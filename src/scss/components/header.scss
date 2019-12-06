@@ -1,13 +1,34 @@
 header {
-  overflow: hidden;
-  padding: 30px 45px;
-  color: #fff;
-  background-color: #333;
+  // overflow: hidden;
+  padding: 20px;
+  color: #333;
+  background-color: #fff;
   @include media("<tablet") {
     padding: 30px 10px;
   }
   @include media("print") {
     padding: 20px 45px;
+  }
+  padding-bottom: 40px !important;
+
+  .card {
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #15171a 50%;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, .36), 1px 3px 8px rgba(39, 44, 49, .03);
+
+    a {
+      color: #fff;
+      transition: all .4s;
+
+      &:hover {
+        color: rgba(255, 255, 255, .5);
+        transition: all .4s;
+      }
+    }
   }
 }
 
@@ -44,12 +65,13 @@ header {
   h1 {
     font-size: 72px;
     line-height: 1;
+    font-weight: 200;
     margin: 5px 0;
     padding: 5px 0;
   }
   h2 {
     font-size: 20.8px;
-    font-weight: 400;
+    font-weight: 200;
     margin: 5px 0;
     padding: 5px 6px;
   }
@@ -93,9 +115,9 @@ address {
   a {
     transition: 0.3s ease-out;
     text-decoration: none;
-    color: #fff;
+    color: #333;
     &:hover {
-      color: #a3d3d1;
+      color: #3eb0ef;
     }
   }
 }

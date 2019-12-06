@@ -1,4 +1,4 @@
-$black: #333;
+$black: #15171a;
 $white: #fff;
 
 @mixin content-after {
@@ -85,7 +85,7 @@ dd {
     font-variant: small-caps;
     float: left;
     clear: left;
-    color: teal;
+    color: #3eb0ef;
   }
 }
 
@@ -110,6 +110,12 @@ dd {
     color: $white;
     border-radius: 5px;
     background: $black;
+
+    .experience-place,
+    .experience-time,
+    .education-time {
+      font-weight: 400;
+    }
 
     .skill,
     .rewards {
@@ -167,7 +173,7 @@ dd {
     .progress-bar {
       height: 100%;
       border-radius: 4px;
-      background: teal;
+      background: #3eb0ef;
       .progress-label {
         font-size: 19px;
         float: right;

@@ -5,17 +5,8 @@
   src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
   /* iOS 4.1- */ }
 
-.icon-weibo:before {
-  content: "\e600";
-  font-family: "iconfont" !important;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-  padding-right: 3px; }
-
 .icon-mail:before {
-  content: "\e602";
+  content: "\e64d";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +15,7 @@
   padding-right: 3px; }
 
 .icon-chat:before {
-  content: "\e601";
+  content: "\e50f";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +23,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: #333;
+  background: #15171a;
   font-size: 24px;
   padding: 6px;
   border-radius: 50%;
@@ -45,18 +36,17 @@
   font-size: 26px; }
 
 .icon-star:before {
-  content: "\e606";
+  content: "\e63f";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
-  font-size: 20px;
   padding-right: 3px; }
 
 .icon-wechat:before {
-  content: "\e601";
+  content: "\e64f";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -65,27 +55,17 @@
   padding-right: 3px; }
 
 .icon-book:before {
-  content: "\e607";
+  content: "\e784";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
-  color: #fff;
-  background: #333;
-  font-size: 24px;
-  padding: 6px;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: block;
-  text-align: center;
-  float: left;
-  line-height: 32px; }
+  padding-right: 3px; }
 
 .icon-gears:before {
-  content: "\e608";
+  content: "\e682";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -93,7 +73,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: teal;
+  background: #3eb0ef;
   padding: 6px;
   border-radius: 50%;
   text-align: center;
@@ -107,7 +87,7 @@
   margin-left: -22px; }
 
 .icon-cloud:before {
-  content: "\e609";
+  content: "\e63a";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -115,7 +95,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: teal;
+  background: #3eb0ef;
   padding: 6px;
   border-radius: 50%;
   text-align: center;
@@ -130,7 +110,7 @@
   font-size: 29px; }
 
 .icon-gear:before {
-  content: "\e60a";
+  content: "\e622";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -142,7 +122,7 @@
   padding-right: 3px; }
 
 .icon-gear-big:before {
-  content: "\e60a";
+  content: "\e622";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -150,7 +130,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: #333;
+  background: #15171a;
   font-size: 24px;
   padding: 6px;
   border-radius: 50%;
@@ -162,7 +142,7 @@
   line-height: 32px; }
 
 .icon-rocket:before {
-  content: "\e60b";
+  content: "\e637";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -170,7 +150,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: #333;
+  background: #15171a;
   font-size: 24px;
   padding: 6px;
   border-radius: 50%;
@@ -183,7 +163,7 @@
   font-size: 26px; }
 
 .icon-github:before {
-  content: "\e603";
+  content: "\e81e";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -192,7 +172,7 @@
   padding-right: 3px; }
 
 .icon-blog:before {
-  content: "\e604";
+  content: "\e656";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -200,8 +180,8 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px; }
 
-.icon-bag:before {
-  content: "\e60c";
+.icon-school:before {
+  content: "\e836";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -209,7 +189,28 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: teal;
+  background: #15171a;
+  font-size: 24px;
+  padding: 6px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-align: center;
+  float: left;
+  line-height: 32px;
+  font-size: 28px; }
+
+.icon-bag:before {
+  content: "\e61d";
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 3px;
+  color: #fff;
+  background: #3eb0ef;
   padding: 6px;
   border-radius: 50%;
   text-align: center;
@@ -224,7 +225,7 @@
   font-size: 26px; }
 
 .icon-wrench:before {
-  content: "\e60d";
+  content: "\e638";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -232,7 +233,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: #333;
+  background: #15171a;
   font-size: 24px;
   padding: 6px;
   border-radius: 50%;
@@ -245,7 +246,7 @@
   font-size: 28px; }
 
 .icon-title-trophy:before {
-  content: "\e60e";
+  content: "\e629";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -253,7 +254,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: #333;
+  background: #15171a;
   font-size: 24px;
   padding: 6px;
   border-radius: 50%;
@@ -267,7 +268,7 @@
 }
 
 .icon-flags:before {
-  content: "\e60f";
+  content: "\e657";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -275,7 +276,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
   color: #fff;
-  background: teal;
+  background: #3eb0ef;
   padding: 6px;
   border-radius: 50%;
   text-align: center;
@@ -289,7 +290,7 @@
   margin-left: -22px; }
 
 .icon-hat:before {
-  content: "\e610";
+  content: "\e642";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -301,7 +302,7 @@
   padding-right: 3px; }
 
 .icon-trophy:before {
-  content: "\e60e";
+  content: "\e629";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -310,7 +311,7 @@
   padding-right: 3px; }
 
 .icon-phone:before {
-  content: "\e611";
+  content: "\e601";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;

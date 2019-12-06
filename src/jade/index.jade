@@ -2,29 +2,29 @@ extends layout
 
 block header
   header
-    figure.qrcode
-      img(src='./img/wechat.png')
-    section.title
-      h1= header.title.name
-      h2= header.title.job
-    address
-      ul.contacts
-        li.icon-phone
-          a= header.contacts.phone
-        li.icon-mail
-          a(href="mailto:"+header.contacts.mail)= header.contacts.mail
-        li.icon-wechat.wechat= header.contacts.wechat
-        if header.contacts.github
-          li.icon-github
-            a(href=header.contacts.github.href)= header.contacts.github.name
-        if header.contacts.blog
-          li.icon-blog
-            a(href=header.contacts.blog.href)= header.contacts.blog.name
+    section.card
+      figure.qrcode
+        img(src='./img/wechat.png')
+      section.title
+        h1= header.title.name
+        h2= header.title.job
+      address
+        ul.contacts
+          li.icon-phone= header.contacts.phone
+          li.icon-mail
+            a(href="mailto:"+header.contacts.mail)= header.contacts.mail
+          li.icon-wechat.wechat= header.contacts.wechat
+          if header.contacts.github
+            li.icon-github
+              a(href=header.contacts.github.href)= header.contacts.github.name
+          if header.contacts.blog
+            li.icon-blog
+              a(href=header.contacts.blog.href)= header.contacts.blog.name
 
 
 block education
   section.education
-    .sec-title-wrapper.icon-book
+    .sec-title-wrapper.icon-school
       h3.sec-title
         span.sec-zh
           | 教育经历
@@ -39,7 +39,7 @@ block education
             dt.education-name= education.name
             dd.education-major.icon-hat= education.major
             each val in education.honor
-              dd.education-honor.icon-trophy!= val
+              dd.education-honor.icon-book!= val
 
 
 block language

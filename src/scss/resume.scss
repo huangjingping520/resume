@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 ul {
@@ -21,7 +22,7 @@ h3 {
 html, body {
   font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB",
     "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  background: #e0e0e0;
+  background: #f4f8fb;
   -webkit-font-smoothing: antialiased;
 
   @include media("print") {
@@ -31,7 +32,7 @@ html, body {
 
 a,
 strong {
-  color: teal;
+  color: #3eb0ef;
 }
 
 strong {
@@ -42,7 +43,7 @@ strong {
   margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 2px 2px 5px;
+  box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
 
   @include media(">=desktop") {
     width: 970px;
