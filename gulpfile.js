@@ -6,6 +6,7 @@ const copy = require('gulp-copy')
 const rimrafPromise = require('rimraf-promise')
 const ghPages = require('gulp-gh-pages')
 const fs = require('fs')
+const path = require('path')
 const connect = require('gulp-connect')
 const puppeteer = require('puppeteer')
 
@@ -123,8 +124,14 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   await page.goto('http://localhost:9001')
   await delay(100)
 
+  const exportPath = path.join(__dirname, './dist/pdf/lenconda_resume.pdf');
+
+  fs.mkdir(path.join(__dirname, './dist/pdf'), () => {
+    fs.writeFileSync(exportPath, '', { encoding: 'utf-8' })
+  })
+
   await page.pdf({
-    path: './dist/pdf/lenconda_resume.pdf',
+    path: exportPath,
     format: 'A4',
     printBackground: true,
     displayHeaderFooter: false,
