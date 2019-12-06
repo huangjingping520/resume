@@ -40,7 +40,7 @@
     }
   },
   "education": {
-    "time": "2017-2021",
+    "time": "2017 - 2021",
     "name": "南昌大学",
     "major": "计算机科学与技术（本科）",
     "honor": [
@@ -77,7 +77,7 @@
       "content": {
         "position": "前端负责人/架构师",
         "tasks": [
-          "技术栈基于`React + TS + Ant Design + Umi + Dva`",
+          "技术栈基于 `React + TS + Ant Design + Umi + Dva`",
           "参与技术选型，并根据需求确定前端整体架构、路由机制",
           "制定项目组工作流程（基于 GitFlow）",
           "制定前端 ESLint 规范（基于 Ant Design Pro 默认规范）",
@@ -94,7 +94,7 @@
       "content": {
         "position": "前端负责人",
         "tasks": [
-          "Web 前端和`Android/iOS App` 开发",
+          "Web 前端和 `Android/iOS App` 开发",
           "参与制定新人培养方案",
           "为工作室成员提供前端培训与技术分享",
           "参与建立前端自动化开发运维体系",
@@ -153,7 +153,7 @@
       "name": "Web 前端",
       "skill": [
         {
-          "name": "HTML / CSS",
+          "name": "HTML/CSS",
           "description": [
             "使用语义化 HTML 标签编写网页结构",
             "熟悉 CSS 3，并能熟练使用 CSS 完成样式设计",
@@ -162,7 +162,7 @@
           ]
         },
         {
-          "name": "JavaScript / ECMAScript",
+          "name": "JavaScript/ECMAScript",
           "description": [
             "`熟练使用 ES 201X 进行项目开发`",
             "严格遵守 `ESLint 规范`",
