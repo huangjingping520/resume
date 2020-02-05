@@ -28,6 +28,10 @@ header {
     border-radius: 5px;
     box-shadow: 8px 14px 38px rgba(39, 44, 49, .36), 1px 3px 8px rgba(39, 44, 49, .03);
 
+    @include media("<tablet") {
+      margin: 0 10px !important;
+    }
+
     a {
       color: #fff;
       transition: all .4s;
