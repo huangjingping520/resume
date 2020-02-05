@@ -8,6 +8,9 @@ block header
       section.title
         h1= header.title.name
         h2= header.title.job
+        h4
+          a(href=header.online target="_blank" style="text-decoration: none;")
+            | 查看在线简历
       address
         ul.contacts
           li.icon-phone= header.contacts.phone
@@ -20,7 +23,6 @@ block header
           if header.contacts.blog
             li.icon-blog
               a(href=header.contacts.blog.href)= header.contacts.blog.name
-
 
 block education
   section.education
