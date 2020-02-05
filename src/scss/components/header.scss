@@ -1,19 +1,27 @@
 header {
-  // overflow: hidden;
-  padding: 20px;
   color: #333;
   background-color: #fff;
   padding-bottom: 50px !important;
+  padding-top: 40px;
   @include media("<tablet") {
     padding: 30px 10px;
   }
   @include media("print") {
-    padding: 20px 45px;
+    // padding: 20px 45px;
+  }
+
+  .online {
+    display: none;
+
+    @include media("print") {
+      display: block;
+    }
   }
 
   .card {
     color: #fff;
     padding: 40px;
+    margin: 0 36px !important;
     box-sizing: border-box;
     background: #15171a 50%;
     background-size: cover;
@@ -56,7 +64,7 @@ header {
   }
   @include media("print") {
     display: block;
-    margin-top: 5px;
+    // margin-top: 5px;
   }
   img {
     width: 100px;
@@ -106,9 +114,9 @@ address {
 }
 
 .wechat {
-  @include media("print") {
-    display: none;
-  }
+  // @include media("print") {
+  //   display: none;
+  // }
 }
 
 .contacts {

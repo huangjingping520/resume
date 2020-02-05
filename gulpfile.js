@@ -87,7 +87,7 @@ gulp.task('clean', () => {
 gulp.task('deploy', () =>
   gulp.src('./dist/**/*').pipe(
     ghPages({
-      remoteUrl: 'git@github.com:Lxxyx/lxxyx.github.io.git',
+      remoteUrl: 'git@github.com:lenconda/lenconda.github.io.git',
       branch: 'master'
     })
   )
@@ -124,7 +124,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   await page.goto('http://localhost:9001')
   await delay(100)
 
-  const exportPath = path.join(__dirname, './dist/pdf/lenconda_resume.pdf');
+  const exportPath = path.join(__dirname, './dist/pdf/彭瀚林-简历-Web 前端实习生.pdf');
 
   fs.mkdir(path.join(__dirname, './dist/pdf'), () => {
     fs.writeFileSync(exportPath, '', { encoding: 'utf-8' })
@@ -133,7 +133,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   await page.pdf({
     path: exportPath,
     width: '10.64in',
-    height: '17.48in',
+    height: '18.24in',
     printBackground: true,
     displayHeaderFooter: false,
     margin: {
@@ -144,7 +144,6 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
     }
   })
 
-  console.log('PDF生成在 ./src/pdf 中了')
   browser.close()
 
   connect.serverClose()

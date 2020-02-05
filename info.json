@@ -16,7 +16,7 @@
       "content": "源代码"
     },
     {
-      "href": "./pdf/lenconda_resume.pdf",
+      "href": "./pdf/彭瀚林-简历-Web 前端实习生.pdf",
       "content": "PDF 下载"
     }
   ],
@@ -161,6 +161,30 @@
     }
   ],
   "skills": {
+    "summary": [
+      {
+        "name": "语言",
+        "content": [
+          "JavaScript/ECMAScript 6+",
+          "TypeScript",
+          "HTML 5",
+          "CSS 3",
+          "Node.js",
+          "Python"
+        ]
+      },
+      {
+        "name": "工具/数据库",
+        "content": [
+          "Git",
+          "GitHub",
+          "MySQL",
+          "MongoDB",
+          "IntelliJ IDEA",
+          "Visual Studio Code"
+        ]
+      }
+    ],
     "flags": {
       "name": "Web 前端",
       "skill": [

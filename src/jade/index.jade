@@ -8,7 +8,7 @@ block header
       section.title
         h1= header.title.name
         h2= header.title.job
-        h4
+        h4.online
           a(href=header.online target="_blank" style="text-decoration: none;")
             | 查看在线简历
       address
@@ -115,6 +115,11 @@ block skills
           | Skills
     .timeline-wrapper
       ul.sec-content.timeline
+        li.timeline-item
+          each item in skills.summary
+            dd.skill-description
+              strong= item.name+"："
+              span=item.content.join('、')
         li.timeline-item.icon-html
           h3.timeline-title
             span.skill= skills.flags.name
