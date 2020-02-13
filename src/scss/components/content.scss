@@ -30,7 +30,7 @@ section {
 }
 
 dd {
-  line-height: 1.42;
+  line-height: 1.5;
 }
 
 .column-6 {
@@ -101,6 +101,7 @@ dd {
     border-left: 5px solid $black;
   }
   .timeline-title {
+    position: relative;
     font-size: 17px;
     font-weight: 400;
     line-height: 1.33;
@@ -110,11 +111,22 @@ dd {
     color: $white;
     border-radius: 5px;
     background: $black;
+    display: flex;
+    justify-content: space-between;
 
     .experience-place,
     .experience-time,
     .education-time {
       font-weight: 400;
+    }
+
+    .experience-time {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: right;
+      width: 130px;
+      flex-shrink: 0;
     }
 
     .skill,
@@ -231,7 +243,7 @@ dd {
   }
 }
 
-.skills {
+.skills, .rewards {
   @include media("print") {
     .skill-content {
       margin: 0;
@@ -244,6 +256,6 @@ dd {
   }
   .skill-description {
     font-size: 15px;
-    margin-left: 23px;
+    margin-left: 27px;
   }
 }

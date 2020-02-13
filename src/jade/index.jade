@@ -34,19 +34,19 @@ block education
           | Education
     .timeline-wrapper
       ul.sec-content.timeline
-        li.timeline-item.icon-flags
-          h3.timeline-title
+        li.timeline-item
+          h3.timeline-title.icon-flags
             time.education-time= education.time
           dl.education-content
             dt.education-name= education.name
-            dd.education-major.icon-hat= education.major
+            dd.education-major.icon-book= education.major
             each val in education.honor
               dd.education-honor.icon-book!= val
 
 
 block language
   section.language
-    .sec-title-wrapper.icon-chat
+    .sec-title-wrapper.icon-language
       h3.sec-title
         span.sec-zh
           | 语言水平
@@ -75,8 +75,8 @@ block experience
     .timeline-wrapper
       ul.sec-content.timeline
         each val in experience
-          li.timeline-item.icon-bag
-            h3.timeline-title
+          li.timeline-item
+            h3.timeline-title.icon-work
               span.experience-place= val.title.place
               if val.title.time
                 time.experience-time= val.title.time
@@ -90,7 +90,7 @@ block experience
 
 block rewards
   section.rewards
-    .sec-title-wrapper.icon-title-trophy
+    .sec-title-wrapper.icon-trophy
       h3.sec-title
         span.sec-zh
           | 竞赛获奖经历
@@ -98,16 +98,16 @@ block rewards
           | Rewards
     .timeline-wrapper
       ul.sec-content.timeline
-        li.timeline-item.icon-flags
+        li.timeline-item
           each reward in rewards
-            h3.timeline-title= reward.name
+            h3.timeline-title.icon-flags= reward.name
             dl.skill-content
               each task in reward.tasks
                 dd.skill-description.icon-star!= task
 
 block skills
   section.skills
-    .sec-title-wrapper.icon-wrench
+    .sec-title-wrapper.icon-brain
       h3.sec-title
         span.sec-zh
           | 技能
@@ -120,8 +120,8 @@ block skills
             dd.skill-description
               strong= item.name+"："
               span=item.content.join('、')
-        li.timeline-item.icon-html
-          h3.timeline-title
+        li.timeline-item
+          h3.timeline-title.icon-html
             span.skill= skills.flags.name
           each skill in skills.flags.skill
             dl.skill-content
@@ -129,8 +129,8 @@ block skills
               each description in skill.description
                 dd.skill-description.icon-star!= description
         if skills.cloud
-          li.timeline-item.icon-cloud
-            h3.timeline-title
+          li.timeline-item
+            h3.timeline-title.icon-server
               span.skill= skills.cloud.name
             each skill in skills.cloud.skill
               dl.skill-content
@@ -138,8 +138,8 @@ block skills
                 each description in skill.description
                   dd.skill-description.icon-star!= description
         if skills.gears
-          li.timeline-item.icon-gears
-            h3.timeline-title
+          li.timeline-item
+            h3.timeline-title.icon-light
               span.skill= skills.gears.name
             each skill in skills.gears.skill
               dl.skill-content

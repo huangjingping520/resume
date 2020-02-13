@@ -8,7 +8,7 @@
 }
 
 @mixin icon-big {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 32px;
   display: inline-block;
   float: left;
@@ -22,14 +22,18 @@
 }
 
 @mixin icon-medium {
-  font-size: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
   line-height: 26px;
   position: absolute;
-  width: 26px;
-  height: 26px;
+  z-index: 9;
+  top: 50%;
+  transform: translateY(-30%);
+  width: 36px;
+  height: 36px;
   margin-top: -7px;
   margin-left: 3px;
-  margin-left: -22px;
+  margin-left: -53px;
   padding: 6px;
   text-align: center;
   color: #fff;
@@ -56,126 +60,132 @@
 }
 
 .icon-mail:before {
-  content: '\e64d';
+  content: '\e6f1';
   @include iconfont;
 }
 
-.icon-chat:before {
-  font-size: 26px;
-  content: '\e50f';
+.icon-language:before {
+  font-size: 20px !important;
+  content: '\e600';
   @include iconfont;
   @include icon-big;
+}
+
+.icon-star {
+  position: relative;
 }
 
 .icon-star:before {
   padding-right: 3px;
   font-size: 12px;
-  content: '\e63f';
+  position: absolute;
+  left: -1.2em;
+  transform: translateY(.3em);
+  content: '\e69b';
   @include iconfont;
 }
 
 .icon-wechat:before {
-  content: '\e64f';
+  content: '\e608';
   @include iconfont;
 }
 
 .icon-html:before {
-  content: '\e65a';
+  content: '\e633';
+  font-size: 19px !important;
   @include iconfont;
   @include icon-medium;
+}
+
+.icon-book {
+  position: relative;
 }
 
 .icon-book:before {
-  content: '\e784';
+  content: '\e990';
+  position: absolute;
+  left: -1.2em;
   @include iconfont;
 }
 
-.icon-gears:before {
-  content: '\e682';
+.icon-light:before {
+  font-size: 18px !important;
+  content: '\e611';
   @include iconfont;
   @include icon-medium;
 }
 
-.icon-cloud:before {
-  content: '\e63a';
+.icon-server:before {
+  font-size: 15px !important;
+  content: '\e7e0';
   @include iconfont;
   @include icon-medium;
+}
+
+.icon-gear {
+  position: relative;
 }
 
 .icon-gear:before {
-  content: '\e622';
+  content: '\e6ef';
+  position: absolute;
+  left: -1.2em;
   @include iconfont;
   @include icon-small;
 }
 
-.icon-gear-big:before {
-  content: '\e622';
-  @include iconfont;
-  @include icon-big;
-}
-
 .icon-rocket:before {
-  font-size: 26px;
-  content: '\e637';
+  font-size: 20px !important;
+  content: '\e853';
   @include iconfont;
   @include icon-big;
 }
 
 .icon-github:before {
-  content: '\e81e';
+  content: '\e972';
   @include iconfont;
 }
 
 .icon-blog:before {
-  content: '\e656';
+  content: '\e660';
   @include iconfont;
 }
 
-.icon-bag:before {
+.icon-work:before {
   font-size: 26px;
-  content: '\e61d';
+  content: '\e60c';
   @include iconfont;
   @include icon-medium;
 }
 
 .icon-school:before {
-  font-size: 26px;
-  content: '\e836';
+  font-size: 20px !important;
+  content: '\f0a7';
   @include iconfont;
   @include icon-big;
 }
 
-.icon-wrench:before {
+.icon-brain:before {
   font-size: 28px;
-  content: '\e638';
+  content: '\e65b';
   @include iconfont;
   @include icon-big;
 }
 
 .icon-flags:before {
-  content: '\e657';
+  content: '\e64d';
+  font-size: 16px !important;
   @include iconfont;
   @include icon-medium;
 }
 
-.icon-hat:before {
-  content: '\e642';
+.icon-phone:before {
+  content: '\e770';
   @include iconfont;
-  @include icon-small;
 }
 
 .icon-trophy:before {
-  content: '\e629';
-  @include iconfont;
-}
-
-.icon-phone:before {
-  content: '\e601';
-  @include iconfont;
-}
-
-.icon-title-trophy:before {
-  content: "\e629";
+  content: "\e896";
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -184,7 +194,7 @@
   padding-right: 3px;
   color: #fff;
   background: #15171a;
-  font-size: 24px;
+  font-size: 20px !important;
   padding: 6px;
   border-radius: 50%;
   width: 32px;
