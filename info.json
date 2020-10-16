@@ -5,7 +5,7 @@
     "PDF 会自动生成，文件名可以在 gulp.js 里改",
     "PDF 的地址，将这个文件里pdf部分改为你的PDF文件名即可"
   ],
-  "title": "彭瀚林 - Web 前端实习生",
+  "title": "彭瀚林 - 前端开发工程师（应届）",
   "aside": [
     {
       "href": "https://www.zhihu.com/people/prexus",
@@ -16,7 +16,7 @@
       "content": "源代码"
     },
     {
-      "href": "./pdf/彭瀚林-简历-Web 前端实习生.pdf",
+      "href": "./pdf/resume.pdf",
       "content": "PDF 下载"
     }
   ],
@@ -24,7 +24,7 @@
     "online": "http://resume.lenconda.top",
     "title": {
       "name": "彭瀚林",
-      "job": "Web 前端实习生"
+      "job": "前端开发工程师（应届）"
     },
     "contacts": {
       "phone": "15717093862",
@@ -68,6 +68,20 @@
     ]
   },
   "experience": [
+    {
+      "title": {
+        "place": "阿里巴巴（中国）网络技术有限公司 - CBU 体验技术部",
+        "time": "2020.06 - 2020.10"
+      },
+      "content": {
+        "position": "实习前端工程师",
+        "tasks": [
+          "参与 1688 卖家工作台业务模块开发",
+          "维护并升级组内前端应用级开发方案，并参与开发方案推广与落地工作",
+          "参与团队权限管理系统前端部分调研与开发工作"
+        ]
+      }
+    },
     {
       "title": {
         "place": "字节跳动 - 垂直业务",
