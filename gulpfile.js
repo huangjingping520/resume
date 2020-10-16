@@ -124,7 +124,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   await page.goto('http://localhost:9001')
   await delay(100)
 
-  const exportPath = path.join(__dirname, './dist/pdf/彭瀚林-简历-Web 前端实习生.pdf');
+  const exportPath = path.join(__dirname, './dist/pdf/resume.pdf');
 
   fs.mkdir(path.join(__dirname, './dist/pdf'), () => {
     fs.writeFileSync(exportPath, '', { encoding: 'utf-8' })
@@ -133,7 +133,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   await page.pdf({
     path: exportPath,
     width: '9.64in',
-    height: '23.24in',
+    height: '25.24in',
     printBackground: true,
     displayHeaderFooter: false,
     margin: {
