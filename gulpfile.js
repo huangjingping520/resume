@@ -113,7 +113,7 @@ gulp.task('dev', ['default', 'json2jade:watch', 'sass:watch', 'webserver'])
 gulp.task('default', ['icon-sass', 'resume-sass', 'json2jade', 'copy'])
 
 gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
-  const browser = await puppeteer.launch({ headless: true })
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
   const page = await browser.newPage()
 
   await page.setViewport({
