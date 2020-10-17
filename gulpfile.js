@@ -133,7 +133,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   await page.pdf({
     path: exportPath,
     width: '9.64in',
-    height: '25.24in',
+    height: '26.9in',
     printBackground: true,
     displayHeaderFooter: false,
     margin: {
