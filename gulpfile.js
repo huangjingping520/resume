@@ -10,7 +10,7 @@ const path = require('path')
 const connect = require('gulp-connect')
 const puppeteer = require('puppeteer')
 
-gulp.task('resume-sass', () => {
+gulp.task('resume-sass', (done) => {
   gulp
     .src('src/scss/resume.scss')
     .pipe(sass().on('error', sass.logError))
@@ -22,9 +22,10 @@ gulp.task('resume-sass', () => {
     )
     .pipe(gulp.dest('dist/css/'))
     .pipe(connect.reload())
+  done();
 })
 
-gulp.task('icon-sass', () => {
+gulp.task('icon-sass', (done) => {
   gulp
     .src('src/scss/iconfont.scss')
     .pipe(sass().on('error', sass.logError))
@@ -36,15 +37,17 @@ gulp.task('icon-sass', () => {
     )
     .pipe(gulp.dest('dist/iconfont/'))
     .pipe(connect.reload())
+  done();
 })
 
-gulp.task('sass:watch', () => {
-  gulp.watch('./src/scss/resume.scss', ['resume-sass'])
-  gulp.watch('./src/scss/iconfont.scss', ['icon-sass'])
-  gulp.watch('./src/scss/components/*.scss', ['resume-sass'])
+gulp.task('sass:watch', (done) => {
+  gulp.watch('./src/scss/resume.scss', gulp.series('resume-sass'))
+  gulp.watch('./src/scss/iconfont.scss', gulp.series('icon-sass'))
+  gulp.watch('./src/scss/components/*.scss', gulp.series('resume-sass'))
+  done()
 })
 
-gulp.task('json2jade', () => {
+gulp.task('json2jade', (done) => {
   const info = JSON.parse(fs.readFileSync('./info.json', 'utf-8'))
   const locals = highlight(info)
   gulp
@@ -56,10 +59,12 @@ gulp.task('json2jade', () => {
     )
     .pipe(gulp.dest('./dist/'))
     .pipe(connect.reload())
+  done()
 })
 
-gulp.task('json2jade:watch', () => {
-  gulp.watch('./info.json', ['json2jade'])
+gulp.task('json2jade:watch', (done) => {
+  gulp.watch('./info.json', gulp.series('json2jade'))
+  done()
 })
 
 function src2dist(dir) {
@@ -73,15 +78,17 @@ function highlight(locals) {
   return JSON.parse(locals)
 }
 
-gulp.task('copy', () => {
+gulp.task('copy', (done) => {
   src2dist('iconfont')
   src2dist('img')
   src2dist('pdf')
   gulp.src('./CNAME').pipe(gulp.dest('./dist'))
+  done()
 })
 
-gulp.task('clean', () => {
+gulp.task('clean', (done) => {
   rimrafPromise('./dist/')
+  done()
 })
 
 gulp.task('deploy', () =>
@@ -96,23 +103,25 @@ gulp.task('deploy', () =>
 let port = 9000
 
 // 避免打印时，同时运行开发服务报错
-gulp.task('set-pdf-port', () => {
+gulp.task('set-pdf-port', (done) => {
   port = 9001
+  done();
 })
 
-gulp.task('webserver', () => {
+gulp.task('webserver', (done) => {
   connect.server({
     root: './dist',
     livereload: true,
     port
   })
+  done()
 })
 
-gulp.task('dev', ['default', 'json2jade:watch', 'sass:watch', 'webserver'])
+gulp.task('default', gulp.series('icon-sass', 'resume-sass', 'json2jade', 'copy'))
 
-gulp.task('default', ['icon-sass', 'resume-sass', 'json2jade', 'copy'])
+gulp.task('dev', gulp.series('default', 'json2jade:watch', 'sass:watch', 'webserver'))
 
-gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
+gulp.task('pdf', gulp.series('set-pdf-port', 'default', 'webserver', async (done) => {
   const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
   const page = await browser.newPage()
 
@@ -145,10 +154,9 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   })
 
   browser.close()
-
   connect.serverClose()
-  process.exit(0)
-})
+  done()
+}))
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
