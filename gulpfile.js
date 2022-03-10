@@ -94,7 +94,7 @@ gulp.task('clean', (done) => {
 gulp.task('deploy', () =>
   gulp.src('./dist/**/*').pipe(
     ghPages({
-      remoteUrl: 'git@github.com:lenconda/lenconda.github.io.git',
+      remoteUrl: 'git@github.com:huangjingping520/huangjingping520.github.io.git',
       branch: 'master'
     })
   )
