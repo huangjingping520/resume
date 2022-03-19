@@ -55,11 +55,41 @@
   "experience": [
     {
       "title": {
-        "place": "LinkStats",
-        "time": "2019.05 - 2019.08"
+        "place": "TDD用户前台页面",
+        "time": "2021.12 - 2022.01"
       },
       "content": {
-        "position": "产品、设计、前端、后端、数据库",
+        "position": "设计、前端",
+        "tasks": [
+          "<a href=\"https://github.com/TDDshoppingProject/shopping\" target=\"_blank\">GitHub 地址</a>",
+          "设计情景、确定产品原型、需求",
+          "参与技术选型，并根据需求确定相关技术栈",
+          "基于 Vue + Element UI 设计并开发前端"
+        ]
+      }
+    },{
+      "title": {
+        "place": "通用后台管理系统",
+        "time": "2022.01 - 2022.01"
+      },
+      "content": {
+        "position": "前端",
+        "tasks": [
+          "<a href=\"https://github.com/huangjingping520/backend-manage-vue\" target=\"_blank\">GitHub 地址</a>",
+          "技术栈基于 `Vue` + `Element UI` + `Vue Router` + `Vuex`",
+          "基于TDD后台项目，设计并优化通用后台管理系统",
+          "使用 `Vuex` 实现状态管理",
+          "使用 `Vue Router` 实现路由管理",
+          "使用 `Mock` 模拟数据并测试"
+        ]
+      }
+    },{
+      "title": {
+        "place": "TDD用户前台页面",
+        "time": "2021.12 - 2022.01"
+      },
+      "content": {
+        "position": "设计、前端",
         "tasks": [
           "<a href=\"https://linkstats.lenconda.top\" target=\"_blank\">线上地址</a>",
           "<a href=\"https://github.com/lenconda/linkstats_fe\" target=\"_blank\">GitHub 地址</a>",
@@ -112,24 +142,15 @@
           "name": "JavaScript/ECMAScript",
           "description": [
             "`熟练使用 ES 6 进行项目开发`",
-            "严格遵守代码规范",
-            "了解`常用的异步处理方案`"
+            "严格遵守代码规范"
           ]
         },
         {
           "name": "前端框架",
           "description": [
-            "理解 Vue 原理，日常使用 Vue 编写网页",
+            "了解 Vue 原理，日常使用 Vue 编写网页",
             "熟悉并日常使用 Element (Plus) 作为 UI 框架",
-            "了解并掌握 BootStrap、jQuery 等框架或库的使用",
-            "了解过 React 开发项目"
-          ]
-        },
-        {
-          "name": "前端工程化实践",
-          "description": [
-            "使用 `Webpack` 构建前端应用",
-            "了解 Vite 相关知识"
+            "了解 BootStrap、jQuery 等框架或库的使用"
           ]
         }
       ]
@@ -151,9 +172,11 @@
             "主动并乐意地探索前端的最新技术，并有较强的自学能力和理解能力",
             "计算机科班生，对计算机的历史、现状和未来有充足且全面的认知，计算机和互联网世界的世界观已初具雏形",
             "始终热忱地拥抱互联网和前端技术",
-            "有意识地关注行业最新动态和最新技术，并有自己的思考"
+            "有意识地关注行业最新动态和最新技术，并有自己的思考",
+            "基于 Hexo 和 GitHub Pages 自建技术博客"
           ]
         },
+        
         {
           "name": "工具使用",
           "description": [
