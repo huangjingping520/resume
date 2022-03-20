@@ -83,23 +83,6 @@
           "使用 `Mock` 模拟数据并测试"
         ]
       }
-    },{
-      "title": {
-        "place": "TDD用户前台页面",
-        "time": "2021.12 - 2022.01"
-      },
-      "content": {
-        "position": "设计、前端",
-        "tasks": [
-          "<a href=\"https://linkstats.lenconda.top\" target=\"_blank\">线上地址</a>",
-          "<a href=\"https://github.com/lenconda/linkstats_fe\" target=\"_blank\">GitHub 地址</a>",
-          "设计情景、确定产品原型、需求",
-          "基于 TypeScript + Koa 2 设计并开发后端架构",
-          "基于 MongoDB + Mongoose 设计数据库",
-          "基于 TypeScript + React + Ant Design 设计并开发前端",
-          "构建前端`自动化构建上线体系`，实现前端自动化运维"
-        ]
-      }
     }
   ],
   "skills": {
@@ -108,6 +91,7 @@
         "name": "语言",
         "content": [
           "JavaScript/ECMAScript 6+",
+          "TypeScript",
           "HTML 5",
           "CSS 3",
           "Node.js",
@@ -141,14 +125,14 @@
         {
           "name": "JavaScript/ECMAScript",
           "description": [
-            "`熟练使用 ES 6 进行项目开发`",
+            "了解如何使用 ES 6 进行项目开发",
             "严格遵守代码规范"
           ]
         },
         {
           "name": "前端框架",
           "description": [
-            "了解 Vue 原理，日常使用 Vue 编写网页",
+            "了解 Vue 基本原理，日常使用 Vue 编写网页",
             "熟悉并日常使用 Element (Plus) 作为 UI 框架",
             "了解 BootStrap、jQuery 等框架或库的使用"
           ]
