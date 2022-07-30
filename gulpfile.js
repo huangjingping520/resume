@@ -1,5 +1,5 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass')
+const sass = require('gulp-sass')(require('sass'))
 const autoprefixer = require('gulp-autoprefixer')
 const jade = require('gulp-jade')
 const copy = require('gulp-copy')
@@ -122,7 +122,7 @@ gulp.task('default', gulp.series('icon-sass', 'resume-sass', 'json2jade', 'copy'
 gulp.task('dev', gulp.series('default', 'json2jade:watch', 'sass:watch', 'webserver'))
 
 gulp.task('pdf', gulp.series('set-pdf-port', 'default', 'webserver', async (done) => {
-  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'], executablePath: '/usr/bin/chromium-browser' })
   const page = await browser.newPage()
 
   await page.setViewport({

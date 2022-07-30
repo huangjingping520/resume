@@ -19,7 +19,7 @@
   "header": {
     "title": {
       "name": "黄京苹",
-      "job": "前端开发实习生"
+      "job": "前端开发工程师（应届）"
     },
     "contacts": {
       "phone": "18179421031",
@@ -30,8 +30,8 @@
         "name": "MerlinAlex"
       },
       "blog": {
-        "href": "https://blog.merlinalex.top",
-        "name": "MerlinCode"
+        "href": "https://merlinalex.top",
+        "name": "MerlinAlex"
       }
     }
   },
@@ -55,19 +55,18 @@
   "experience": [
     {
       "title": {
-        "place": "TDD用户前台页面",
-        "time": "2021.12 - 2022.01"
+        "place": "type-writer"
       },
       "content": {
         "position": "设计、前端",
         "tasks": [
-          "<a href=\"https://github.com/TDDshoppingProject/shopping\" target=\"_blank\">GitHub 地址</a>",
+          "<a href=\"https://github.com/huangjingping520/type-writer\" target=\"_blank\">GitHub 地址</a>",
           "设计情景、确定产品原型、需求",
-          "参与技术选型，并根据需求确定相关技术栈",
-          "基于 Vue + Element UI 设计并开发前端"
+          "基于 TypeScript 设计并开发"
         ]
       }
-    },{
+    },
+    {
       "title": {
         "place": "通用后台管理系统",
         "time": "2022.01 - 2022.01"
@@ -81,6 +80,21 @@
           "使用 `Vuex` 实现状态管理",
           "使用 `Vue Router` 实现路由管理",
           "使用 `Mock` 模拟数据并测试"
+        ]
+      }
+    },
+    {
+      "title": {
+        "place": "TDD用户前台页面",
+        "time": "2021.12 - 2022.01"
+      },
+      "content": {
+        "position": "设计、前端",
+        "tasks": [
+          "<a href=\"https://github.com/TDDshoppingProject/shopping\" target=\"_blank\">GitHub 地址</a>",
+          "设计情景、确定产品原型、需求",
+          "参与技术选型，并根据需求确定相关技术栈",
+          "基于 Vue + Element UI 设计并开发前端"
         ]
       }
     }
@@ -160,7 +174,6 @@
             "基于 Hexo 和 GitHub Pages 自建技术博客"
           ]
         },
-        
         {
           "name": "工具使用",
           "description": [

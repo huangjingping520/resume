@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp clean && gulp dev",
-    "pdf": "gulp pdf",
+    "build": "gulp pdf",
     "dev": "gulp dev",
     "deploy": "gulp pdf && gulp deploy --no-sandbox && git add -A && git commit -m 'update resume' && git push origin master"
   },
@@ -19,10 +19,11 @@
     "gulp-connect": "^5.0.0",
     "gulp-copy": "^0.0.2",
     "gulp-jade": "^1.1.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
     "jade": "^1.11.0",
     "puppeteer": "^5.3.1",
-    "rimraf-promise": "^2.0.0"
+    "rimraf-promise": "^2.0.0",
+    "sass": "^1.54.0"
   },
   "devDependencies": {
     "@types/puppeteer": "^1.12.4",
